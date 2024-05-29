@@ -11,7 +11,7 @@ export const fetchEvaluation = async (fen: string): Promise<StockfishResponse | 
 
     const data =  await response.json();
     console.log('fetchEvaluation', data);
-
+    
     return data
   } catch (err) {
     console.log('fetchEvaluation ERROR', err)
